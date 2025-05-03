@@ -1,22 +1,45 @@
+
 body {
-  font-family: helvetica, arial, sans-serif;
-  margin: 2em;
-  color: #3D3D3D;
+  font-family: 'Roboto', 'Helvetica', sans-serif; /* Modern font */
+  margin: 0; /* Remove default margin for full-page design */
+  padding: 2rem; /* Add padding instead */
+  background: linear-gradient(135deg, #4766a0, #2a5298); /* Gradient background */
+  color: #ffffff; /* White text for contrast */
+  min-height: 100vh; /* Ensure full height */
 }
 
+/* Stylish heading with shadow and bold color */
 h1 {
-  font-style: italic;
-  color: #FF6F00;
+  font-family: 'Montserrat', sans-serif; /* Different font for heading */
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #00d4ff; /* Bright cyan for pop */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  margin-bottom: 1rem;
 }
 
+/* Paragraph styling for readability */
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 800px; /* Limit width for better readability */
+  background-color: rgba(255, 255, 255, 0.1); /* Slight translucent background */
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/* Video styling (unchanged to preserve functionality) */
 video {
   display: block;
 }
 
+/* Section transition effect (unchanged) */
 section {
   opacity: 1;
   transition: opacity 500ms ease-in-out;
 }
+
+/* Classes for visibility control (unchanged) */
 .removed {
   display: none;
 }
@@ -25,23 +48,48 @@ section {
   opacity: 0.2;
 }
 
+
 .camView {
-  position: relative;
-  float: left;
-  width: calc(100% - 20px);
-  margin: 10px;
-  cursor: pointer;
+  position: relative; 
+  float: left; 
+  width: calc(100% - 20px); 
+  margin: 10px; 
+  cursor: pointer; 
+  background-color: #ffffff; 
+  border-radius: 12px; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  padding: 1rem; 
 }
+
+
+#webcamButton {
+  background-color: #00d4ff; 
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 25px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#webcamButton:hover {
+  background-color: #00aaff; 
+  transform: scale(1.05); 
+}
+
 
 .camView p {
   position: absolute;
   padding: 5px;
   background-color: rgba(255, 111, 0, 0.85);
-  color: #FFF;
+  color: #fff;
   border: 1px dashed rgba(255, 255, 255, 0.7);
   z-index: 2;
   font-size: 12px;
 }
+
 
 .highlighter {
   background: rgba(0, 255, 0, 0.25);
